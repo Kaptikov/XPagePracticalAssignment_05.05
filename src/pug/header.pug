@@ -1,1 +1,51 @@
-h1.header hello world
+header.header
+  .header__container._container
+    .header__top
+      a.header__link-add(href="#") Предложить новость
+      .header__logo
+        a.header__logo-link(href="#")
+          svg.i-logo(width="214px" height="48px" aria-hidden="true")
+            use(xlink:href='img/icons/icons.svg#Logo')
+      a.header__link-tel(href="tel:+8 (3513) 65-17-11") 8 (3513) 65-17-11
+
+      button.header__search
+        svg.i-search(width="18px" height="18px" aria-hidden="true")
+          use(xlink:href='img/icons/icons.svg#Search')
+    .header__bottom 
+      nav.header__menu.menu
+        ul.menu__list
+          li.menu__item
+            a.menu__link(href="#") Новости
+          li.menu__item
+            a.menu__link(href="#") Телепроекты
+          li.menu__item
+            a.menu__link(href="#") Реклама
+          li.menu__item.menu__item_dropdown
+            a.menu__link(href="#") Онлайн 
+              svg.i-arrow(width="11px" height="7px" aria-hidden="true")
+                use(xlink:href='img/icons/icons.svg#Arrow')
+          li.menu__item
+            a.menu__link(href="#") Программа передач
+          li.menu__item.menu__item_dropdown
+            a.menu__link(href="#") Еще
+              svg.i-arrow(width="11px" height="7px" aria-hidden="true")
+                use(xlink:href='img/icons/icons.svg#Arrow')
+      .header__subscribe.subscribe-header
+        p.subscribe-header__title
+          |Подписывайтесь на нас:
+        .subscribe-header__icons
+          a.subscribe-header__link(href="#") 
+            svg.i-arrow(width="15px" height="16px" aria-hidden="true")
+              use(xlink:href='img/icons/icons.svg#YouTube')
+          a.subscribe-header__link(href="#") 
+            svg.i-arrow(width="16px" height="16px" aria-hidden="true")
+              use(xlink:href='img/icons/icons.svg#Facebook')
+          a.subscribe-header__link(href="#") 
+            svg.i-arrow(width="19px" height="18px" aria-hidden="true")
+              use(xlink:href='img/icons/icons.svg#Vk')
+          a.subscribe-header__link(href="#") 
+            svg.i-arrow(width="16px" height="16px" aria-hidden="true")
+              use(xlink:href='img/icons/icons.svg#Ok')
+          a.subscribe-header__link(href="#") 
+            svg.i-arrow(width="16px" height="16px" aria-hidden="true")
+              use(xlink:href='img/icons/icons.svg#Instagram')
