@@ -2,45 +2,58 @@ import * as flsFunctions from './modules/functions.js'
 
 flsFunctions.isWebp()
 
-// import Swiper, { Navigation } from 'swiper'
+import Swiper, { Navigation, Pagination, EffectFade, Autoplay } from 'swiper'
 
-// let swiper1 = new Swiper('.reviews__swiper', {
-//   modules: [Navigation],
-//   // Optional parameters
-//   loop: true,
-//   slidesPerView: 3,
+let articleSwiper = new Swiper('.article__swiper', {
+  modules: [Pagination, Navigation, EffectFade, Autoplay],
+  // Optional parameters
+  loop: true,
+  // slidesPerView: 1,
 
-//   direction: 'horizontal',
+  // direction: 'horizontal',
 
-//   // speed: 800,
+  // speed: 800,
 
-//   // spaceBetween: 23,
+  autoplay: true,
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
+  spaceBetween: 30,
 
-//   breakpoints: {
-//     // when window width is >= 320px
-//     320: {
-//       slidesPerView: 1,
-//       spaceBetween: 44,
-//     },
-//     // when window width is >= 480px
-//     // 480: {
-//     //   slidesPerView: 2,
-//     //   spaceBetween: 30
-//     // },
-//     // when window width is >= 640px
-//     524: {
-//       slidesPerView: 2,
-//       spaceBetween: 42,
-//     },
-//     767: {
-//       slidesPerView: 3,
-//       spaceBetween: 47,
-//     },
-//   },
-// })
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    // type: 'bullets',
+    clickable: true,
+  },
+
+  effect: 'fade',
+
+  fadeEffect: {
+    crossFade: true,
+  },
+
+  // breakpoints: {
+  //   // when window width is >= 320px
+  //   320: {
+  //     slidesPerView: 1,
+  //     spaceBetween: 44,
+  //   },
+  //   // when window width is >= 480px
+  //   // 480: {
+  //   //   slidesPerView: 2,
+  //   //   spaceBetween: 30
+  //   // },
+  //   // when window width is >= 640px
+  //   524: {
+  //     slidesPerView: 2,
+  //     spaceBetween: 42,
+  //   },
+  //   767: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 47,
+  //   },
+  // },
+})
