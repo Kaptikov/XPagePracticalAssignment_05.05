@@ -47,6 +47,8 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
+    "@uvarov.frontend/vanilla-calendar": "^2.6.0",
+    "selectmenu-polyfill": "^0.0.4",
     "swiper": "^9.3.1"
   }
 }

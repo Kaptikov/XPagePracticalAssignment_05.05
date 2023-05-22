@@ -1,0 +1,12 @@
+doctype html
+html(lang="ru")
+  include pug/head 
+  title Типовая страница
+  body
+  .wrapper
+    include pug/header
+    main.page.page__sample-page
+      include pug/news
+      include pug/feedback
+    include pug/footer
+  script(src="js/app.min.js") 

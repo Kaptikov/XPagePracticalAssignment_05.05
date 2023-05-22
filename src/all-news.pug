@@ -1,0 +1,12 @@
+doctype html
+html(lang="ru")
+  include pug/head 
+  title all-news
+  body
+  .wrapper
+    include pug/header
+    main.page.page__all-news
+      include pug/all-news
+
+    include pug/footer
+  script(src="js/app.min.js") 

@@ -1,0 +1,145 @@
+.feedback {
+  color: #fff;
+  background: $main-color;
+
+  // .feedback__container
+  &__container {
+    padding-top: 90px;
+    padding-bottom: 108px;
+
+  }
+
+  // .feedback__title
+  &__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 125%;
+    margin-bottom: 54px;
+  }
+
+  // .feedback__form
+  &__form {
+    display: grid;
+    grid-template-rows: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas: "name email file"
+      "comment comment comment"
+      "btn . .";
+    gap: 50px;
+  }
+
+
+  // .feedback__input
+  &__input {
+    color: #fff;
+    background: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #fff;
+      padding-bottom: 12px;
+    }
+
+    &--name {
+      grid-area: name;
+      border-bottom: 2px solid #fff;
+    }
+
+    &--email {
+      grid-area: email;
+      border-bottom: 2px solid #fff;
+    }
+
+    &--comment {
+      grid-area: comment;
+      border-bottom: 2px solid #fff;
+    }
+
+    &--file {
+      display: flex;
+      align-items: center;
+      grid-area: file;
+    }
+
+    &--file input[type="file"] {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+
+    }
+  }
+
+  // .feedback__btn
+  &__btn {
+    grid-area: btn;
+  }
+
+  // .feedback__link
+  &__btn {
+    max-width: 162px;
+    border-color: #fff;
+  }
+}
+
+#custom-button {
+  padding-right: 10px;
+  color: white;
+  // background-color: #009578;
+  // border: 1px solid #000;
+  // border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  // background-color: #00b28f;
+}
+
+#custom-text {
+  // margin-left: 10px;
+  // font-family: sans-serif;
+  // color: #aaa;
+}
+
+@media (max-width: 1503px) {
+  .feedback {
+    &__title {
+      @include adaptiv-font(52, 40);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .feedback {
+    &__form {
+      grid-template-rows: 1fr 1fr auto 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "name email"
+        "comment comment"
+        "file ."
+        "btn .";
+      gap: 40px 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback {
+    &__form {
+      grid-template-rows: 1fr 1fr auto 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "name"
+        "email"
+        "comment"
+        "file"
+        "btn";
+      gap: 40px 30px;
+    }
+  }
+}

@@ -1,16 +1,34 @@
 @import "../../node_modules/swiper/swiper.scss";
+// @import "~swiper/swiper";
 @import "../../node_modules/swiper/modules/navigation/navigation.scss";
 @import "../../node_modules/swiper/modules/pagination/pagination.scss";
+@import "../../node_modules/swiper/modules/effect-fade/effect-fade.scss";
+
+// @import "_vanilla-calendar-theme.scss";  
+@import "_vanilla-calendar.scss";
 
 // @import "fonts.scss";
-
 @import "null.scss";
 @import "base.scss";
 
 @import "header.scss";
 
-@import "article.scss";
 
+
+// ----------------------------
+
+@import "article.scss";
+@import "hot-news.scss";
+@import "development.scss";
+@import "releases.scss";
+
+// ----------------------------
+
+@import "all-news.scss";
+
+@import "feedback.scss";
+
+// ----------------------------
 
 @import "news.scss";
 

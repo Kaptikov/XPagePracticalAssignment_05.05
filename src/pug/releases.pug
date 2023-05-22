@@ -1,0 +1,34 @@
+section.releases 
+  .releases__container._container 
+    h2.releases__title.title Премьерные <br> выпуски
+    .releases__inner
+      .releases__video 
+        iframe( width='100%' height='100%' src='https://www.youtube.com/embed/zMCOFQ_w03Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+      //- .releases__video 
+      //-   img(src="img/video.jpg" alt="alt")
+      .releases__swiper.swiper-container(data-mobile='false')
+        .releases__swiper-wrapper.swiper-wrapper
+          .releases__item
+            time.releases-item__date.tag(datetime="2021-01-02") 02/01/2021
+            h3.releases-item__title «Территория закона» 26.01.2021
+            .releases-item__link
+              svg.i-link(width="21" height="18" aria-hidden="true")
+                use(xlink:href='img/icons/icons.svg#Link')
+
+          .releases__item
+            time.releases-item__date.tag(datetime="2021-01-02") 02/01/2021
+            h3.releases-item__title «Сделано в Златоусте» №1 (Никон)
+            .releases-item__link
+              svg.i-link(width="21" height="18" aria-hidden="true")
+                use(xlink:href='img/icons/icons.svg#Link')
+
+          .releases__item
+            time.releases-item__date.tag(datetime="2021-01-02") 02/01/2021
+            h3.releases-item__title «Депутатский час» 22.01.2021
+            .releases-item__link
+              svg.i-link(width="21" height="18" aria-hidden="true")
+                use(xlink:href='img/icons/icons.svg#Link')
+
+    a.releases__link.link_border(href="#") Все выпуски
+
+
