@@ -3056,6 +3056,8 @@ a:hover {
 .feedback__container {
   padding-top: 90px;
   padding-bottom: 108px;
+  max-width: 985px;
+  margin-right: auto;
 }
 .feedback__title {
   font-weight: 700;

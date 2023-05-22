@@ -1,21 +1,22 @@
 section.feedback
-  .feedback__container._container 
-    h2.feedback__title Оставьте свой комментарий
-    form.feedback__form(action="#" method="post" enctype="multipart/form-data")
-      input.feedback__input.feedback__input--name(placeholder='Имя' type="text" id="name" name="name" required)
+  ._container 
+    .feedback__container
+      h2.feedback__title Оставьте свой комментарий
+      form.feedback__form(action="#" method="post" enctype="multipart/form-data")
+        input.feedback__input.feedback__input--name(placeholder='Имя' type="text" id="name" name="name" required)
 
-      input.feedback__input.feedback__input--email(placeholder='E-mail' type="email" id="email" name="email" required)
+        input.feedback__input.feedback__input--email(placeholder='E-mail' type="email" id="email" name="email" required)
 
-      textarea.feedback__input.feedback__input--comment(placeholder='Комментарий' id="comment" name="comment" required)
+        textarea.feedback__input.feedback__input--comment(placeholder='Комментарий' id="comment" name="comment" required)
 
-      //- input.feedback__input.feedback__input--file(type="file" id="file" name="file")
+        //- input.feedback__input.feedback__input--file(type="file" id="file" name="file")
 
-      .feedback__input.feedback__input--file
-        input#real-file(type='file' hidden='hidden')
-        button#custom-button(type='button') 
-          svg.i-link(width="22" height="22" aria-hidden="true")
-            use(xlink:href='img/icons/icons.svg#staple')
-        span#custom-text Прикрепите файл
+        .feedback__input.feedback__input--file
+          input#real-file(type='file' hidden='hidden')
+          button#custom-button(type='button') 
+            svg.i-link(width="22" height="22" aria-hidden="true")
+              use(xlink:href='img/icons/icons.svg#staple')
+          span#custom-text Прикрепите файл
 
 
-      button.feedback__btn.link_border(type="submit") Отправить
+        button.feedback__btn.link_border(type="submit") Отправить

@@ -169,22 +169,24 @@
         </div>
       </section>
       <section class="feedback">
-        <div class="feedback__container _container"> 
-          <h2 class="feedback__title">Оставьте свой комментарий</h2>
-          <form class="feedback__form" action="#" method="post" enctype="multipart/form-data">
-            <input class="feedback__input feedback__input--name" placeholder="Имя" type="text" id="name" name="name" required>
-            <input class="feedback__input feedback__input--email" placeholder="E-mail" type="email" id="email" name="email" required>
-            <textarea class="feedback__input feedback__input--comment" placeholder="Комментарий" id="comment" name="comment" required></textarea>
-            <div class="feedback__input feedback__input--file">
-              <input id="real-file" type="file" hidden="hidden">
-              <button id="custom-button" type="button"> 
-                <svg class="i-link" width="22" height="22" aria-hidden="true">
-                  <use xlink:href="img/icons/icons.svg#staple"></use>
-                </svg>
-              </button><span id="custom-text">Прикрепите файл</span>
-            </div>
-            <button class="feedback__btn link_border" type="submit">Отправить</button>
-          </form>
+        <div class="_container"> 
+          <div class="feedback__container">
+            <h2 class="feedback__title">Оставьте свой комментарий</h2>
+            <form class="feedback__form" action="#" method="post" enctype="multipart/form-data">
+              <input class="feedback__input feedback__input--name" placeholder="Имя" type="text" id="name" name="name" required>
+              <input class="feedback__input feedback__input--email" placeholder="E-mail" type="email" id="email" name="email" required>
+              <textarea class="feedback__input feedback__input--comment" placeholder="Комментарий" id="comment" name="comment" required></textarea>
+              <div class="feedback__input feedback__input--file">
+                <input id="real-file" type="file" hidden="hidden">
+                <button id="custom-button" type="button"> 
+                  <svg class="i-link" width="22" height="22" aria-hidden="true">
+                    <use xlink:href="img/icons/icons.svg#staple"></use>
+                  </svg>
+                </button><span id="custom-text">Прикрепите файл</span>
+              </div>
+              <button class="feedback__btn link_border" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
