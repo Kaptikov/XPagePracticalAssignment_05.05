@@ -24,10 +24,21 @@ section.news
 
       p(style="font-weight: 300") Напомним, перепрофилировать родильный дом решили в связи с ежедневным большим приростом златоустовцев, заболевших ковид-19.  За это время лечение на госпитальной базе прошли свыше 1000 пациентов.
 
-      div(style="position: relative; padding-top: 56%; margin-bottom: 48px")
-        iframe(style="position: absolute; top: 0; left:0;" width='100%' height='100%' src='https://www.youtube.com/embed/zMCOFQ_w03Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+      //- div(style="position: relative; padding-top: 56%; margin-bottom: 48px")
+      //-   iframe(style="position: absolute; top: 0; left:0;" width='100%' height='100%' src='https://www.youtube.com/embed/zMCOFQ_w03Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+
+      .news__video.news-video.video
+        a.news-video__link.video__link(href='https://youtu.be/zMCOFQ_w03Q')
+          img.news-video__media.video__media(src='https://i.ytimg.com/vi/zMCOFQ_w03Q/maxresdefault.jpg' alt='Расслабляющее музыкальное радио - Гараж будущего для бесперебойного рабочего процесса')
+        //- picture
+        //-   source(srcset='https://i.ytimg.com/vi_webp/zMCOFQ_w03Q/maxresdefault.webp' type='image/webp')
+        //-   img.news-video__media(src='https://i.ytimg.com/vi/zMCOFQ_w03Q/maxresdefault.jpg' alt='Расслабляющее музыкальное радио - Гараж будущего для бесперебойного рабочего процесса')
+        button.news-video__btn.video__btn(aria-label='Запустить видео')
+          svg.i-play(width="28" height="28" aria-hidden="true")
+            use(xlink:href='img/icons/icons.svg#Play')
 
         //- img(src="img/video2.jpg" alt="alt")
+
       h4 
         b Александр Дорофеев
 

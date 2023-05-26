@@ -2,32 +2,55 @@ section.releases
   .releases__container._container 
     h2.releases__title.title Премьерные <br> выпуски
     .releases__inner
-      .releases__video 
-        iframe( width='100%' height='100%' src='https://www.youtube.com/embed/zMCOFQ_w03Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+
+      .releases__video.releases-video.video
+        a.releases-video__link.video__link(href='https://youtu.be/zMCOFQ_w03Q')
+          img.releases-video__media.video__media(src='https://i.ytimg.com/vi/zMCOFQ_w03Q/maxresdefault.jpg' alt='Расслабляющее музыкальное радио - Гараж будущего для бесперебойного рабочего процесса')
+        //- picture
+        //-   source(srcset='https://i.ytimg.com/vi_webp/zMCOFQ_w03Q/maxresdefault.webp' type='image/webp')
+        //-   img.releases-video__media(src='https://i.ytimg.com/vi/zMCOFQ_w03Q/maxresdefault.jpg' alt='Расслабляющее музыкальное радио - Гараж будущего для бесперебойного рабочего процесса')
+        button.releases-video__btn.video__btn(aria-label='Запустить видео')
+          svg.i-play(width="28" height="28" aria-hidden="true")
+            use(xlink:href='img/icons/icons.svg#Play')
+
+      //- .releases__video 
+      //-   iframe( width='100%' height='100%' src='https://www.youtube.com/embed/zMCOFQ_w03Q' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
       //- .releases__video 
       //-   img(src="img/video.jpg" alt="alt")
-      .releases__swiper.swiper-container(data-mobile='false')
+      .releases__swiper(data-mobile='false')
         .releases__swiper-wrapper.swiper-wrapper
-          .releases__item
-            time.releases-item__date.tag(datetime="2021-01-02") 02/01/2021
-            h3.releases-item__title «Территория закона» 26.01.2021
-            .releases-item__link
-              svg.i-link(width="21" height="18" aria-hidden="true")
-                use(xlink:href='img/icons/icons.svg#Link')
+          .releases__item.releases-item
+            .releases-item__container
+              time.releases-item__date.tag(datetime="2021-01-02") 02/01/2021
+              a.releases-item__title(href="#")  «Территория закона» 26.01.2021
+              .releases-item__link
+                svg.i-link(width="21" height="18" aria-hidden="true")
+                  use(xlink:href='img/icons/icons.svg#Link')
 
-          .releases__item
-            time.releases-item__date.tag(datetime="2021-01-02") 02/01/2021
-            h3.releases-item__title «Сделано в Златоусте» №1 (Никон)
-            .releases-item__link
-              svg.i-link(width="21" height="18" aria-hidden="true")
-                use(xlink:href='img/icons/icons.svg#Link')
+          .releases__item.releases-item
+            .releases-item__container
+              time.releases-item__date.tag(datetime="2021-01-02") 02/01/2021
+              a.releases-item__title(href="#")  «Сделано в Златоусте» №1 (Никон)
+              .releases-item__link
+                svg.i-link(width="21" height="18" aria-hidden="true")
+                  use(xlink:href='img/icons/icons.svg#Link')
 
-          .releases__item
-            time.releases-item__date.tag(datetime="2021-01-02") 02/01/2021
-            h3.releases-item__title «Депутатский час» 22.01.2021
-            .releases-item__link
-              svg.i-link(width="21" height="18" aria-hidden="true")
-                use(xlink:href='img/icons/icons.svg#Link')
+          .releases__item.releases-item
+            .releases-item__container
+              time.releases-item__date.tag(datetime="2021-01-02") 02/01/2021
+              a.releases-item__title(href="#")  «Депутатский час» 22.01.2021
+              .releases-item__link
+                svg.i-link(width="21" height="18" aria-hidden="true")
+                  use(xlink:href='img/icons/icons.svg#Link')
+
+        .releases__swiper-button-next.swiper-button-next
+          svg.i-link(width="8" height="16" aria-hidden="true")
+            use(xlink:href='img/icons/icons.svg#Arrow-Swiper')
+        .releases__swiper-button-prev.swiper-button-prev
+          svg.i-link(width="8" height="16" aria-hidden="true")
+            use(xlink:href='img/icons/icons.svg#Arrow-Swiper')
+
+
 
     a.releases__link.link_border(href="#") Все выпуски
 

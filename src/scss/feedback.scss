@@ -133,6 +133,21 @@
 
 @media (max-width: 768px) {
   .feedback {
+    &__container {
+      padding: 52px 0 50px 0;
+    }
+
+    &__input {
+      &::placeholder {
+        color: $gray-date;
+        padding-bottom: 12px;
+      }
+    }
+
+    &__btn {
+      max-width: 100%;
+    }
+
     &__form {
       grid-template-rows: 1fr 1fr auto 1fr 1fr;
       grid-template-columns: 1fr;
@@ -142,6 +157,7 @@
         "file"
         "btn";
       gap: 40px 30px;
+
     }
   }
 }

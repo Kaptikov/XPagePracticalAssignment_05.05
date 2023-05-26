@@ -32,29 +32,43 @@
               <li class="menu__item menu__item_dropdown"><a class="menu__link" href="#">Онлайн 
                   <svg class="i-arrow" width="11px" height="7px" aria-hidden="true">
                     <use xlink:href="img/icons/icons.svg#Arrow"></use>
-                  </svg></a></li>
+                  </svg></a>
+                <ul class="sub-menu__list">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Онлайн</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Реклама</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Все новости</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Свежие новости</a></li>
+                </ul>
+              </li>
               <li class="menu__item"><a class="menu__link" href="#">Программа передач</a></li>
               <li class="menu__item menu__item_dropdown"><a class="menu__link" href="#">Еще
                   <svg class="i-arrow" width="11px" height="7px" aria-hidden="true">
                     <use xlink:href="img/icons/icons.svg#Arrow"></use>
-                  </svg></a></li>
+                  </svg></a>
+                <ul class="sub-menu__list">
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Онлайн</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Реклама</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Все новости</a></li>
+                  <li class="sub-menu__item"><a class="sub-menu__link" href="#">Свежие новости</a></li>
+                </ul>
+              </li>
             </ul>
           </nav>
           <div class="header__subscribe subscribe-header">
             <div class="subscribe-header__title">Подписывайтесь на нас:</div>
-            <div class="subscribe-header__icons"><a class="subscribe-header__link" href="#"> 
+            <div class="subscribe-header__icons icons-socials"><a class="subscribe-header__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="15px" height="16px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#YouTube"></use>
-                </svg></a><a class="subscribe-header__link" href="#"> 
+                </svg></a><a class="subscribe-header__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="16px" height="16px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#Facebook"></use>
-                </svg></a><a class="subscribe-header__link" href="#"> 
+                </svg></a><a class="subscribe-header__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="19px" height="18px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#Vk"></use>
-                </svg></a><a class="subscribe-header__link" href="#"> 
+                </svg></a><a class="subscribe-header__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="16px" height="16px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#Ok"></use>
-                </svg></a><a class="subscribe-header__link" href="#"> 
+                </svg></a><a class="subscribe-header__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="16px" height="16px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#Instagram"></use>
                 </svg></a></div>
@@ -75,7 +89,14 @@
                 <li class="menu-burger__item menu-burger__item_dropdown"><a class="menu-burger__link" href="#">Еще
                     <svg class="i-arrow" width="11px" height="7px" aria-hidden="true">
                       <use xlink:href="img/icons/icons.svg#Arrow"></use>
-                    </svg></a></li>
+                    </svg></a>
+                  <ul class="sub-menu__list">
+                    <li class="sub-menu__item"><a class="sub-menu__link" href="#">Онлайн</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__link" href="#">Реклама</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__link" href="#">Все новости</a></li>
+                    <li class="sub-menu__item"><a class="sub-menu__link" href="#">Свежие новости</a></li>
+                  </ul>
+                </li>
               </ul>
             </nav>
             <div class="header-burger__top"><a class="header-burger__link-tel" href="tel:+8 (3513) 65-17-11">8 (3513) 65-17-11</a><a class="header-burger__link-add" href="#">Предложить новость</a></div>
@@ -277,8 +298,16 @@
               </div>
             </div>
             <div class="development__swiper-navigation">
-              <div class="development__swiper-button-next swiper-button-next"></div>
-              <div class="development__swiper-button-prev swiper-button-prev"></div>
+              <div class="development__swiper-button-next swiper-button-next">
+                <svg class="i-link" width="8" height="16" aria-hidden="true">
+                  <use xlink:href="img/icons/icons.svg#Arrow-Swiper"></use>
+                </svg>
+              </div>
+              <div class="development__swiper-button-prev swiper-button-prev">
+                <svg class="i-link" width="8" height="16" aria-hidden="true">
+                  <use xlink:href="img/icons/icons.svg#Arrow-Swiper"></use>
+                </svg>
+              </div>
             </div>
           </div><a class="development__link link_border" href="#">Больше новостей</a>
         </div>
@@ -287,38 +316,55 @@
         <div class="releases__container _container"> 
           <h2 class="releases__title title">Премьерные <br> выпуски</h2>
           <div class="releases__inner">
-            <div class="releases__video"> 
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zMCOFQ_w03Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            <div class="releases__video releases-video video"><a class="releases-video__link video__link" href="https://youtu.be/zMCOFQ_w03Q"><img class="releases-video__media video__media" src="https://i.ytimg.com/vi/zMCOFQ_w03Q/maxresdefault.jpg" alt="Расслабляющее музыкальное радио - Гараж будущего для бесперебойного рабочего процесса"></a>
+              <button class="releases-video__btn video__btn" aria-label="Запустить видео">
+                <svg class="i-play" width="28" height="28" aria-hidden="true">
+                  <use xlink:href="img/icons/icons.svg#Play"></use>
+                </svg>
+              </button>
             </div>
-            <div class="releases__swiper swiper-container" data-mobile="false">
+            <div class="releases__swiper" data-mobile="false">
               <div class="releases__swiper-wrapper swiper-wrapper">
-                <div class="releases__item">
-                  <time class="releases-item__date tag" datetime="2021-01-02">02/01/2021</time>
-                  <h3 class="releases-item__title">«Территория закона» 26.01.2021</h3>
-                  <div class="releases-item__link">
-                    <svg class="i-link" width="21" height="18" aria-hidden="true">
-                      <use xlink:href="img/icons/icons.svg#Link"></use>
-                    </svg>
+                <div class="releases__item releases-item">
+                  <div class="releases-item__container">
+                    <time class="releases-item__date tag" datetime="2021-01-02">02/01/2021</time><a class="releases-item__title" href="#"> «Территория закона» 26.01.2021</a>
+                    <div class="releases-item__link">
+                      <svg class="i-link" width="21" height="18" aria-hidden="true">
+                        <use xlink:href="img/icons/icons.svg#Link"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
-                <div class="releases__item">
-                  <time class="releases-item__date tag" datetime="2021-01-02">02/01/2021</time>
-                  <h3 class="releases-item__title">«Сделано в Златоусте» №1 (Никон)</h3>
-                  <div class="releases-item__link">
-                    <svg class="i-link" width="21" height="18" aria-hidden="true">
-                      <use xlink:href="img/icons/icons.svg#Link"></use>
-                    </svg>
+                <div class="releases__item releases-item">
+                  <div class="releases-item__container">
+                    <time class="releases-item__date tag" datetime="2021-01-02">02/01/2021</time><a class="releases-item__title" href="#"> «Сделано в Златоусте» №1 (Никон)</a>
+                    <div class="releases-item__link">
+                      <svg class="i-link" width="21" height="18" aria-hidden="true">
+                        <use xlink:href="img/icons/icons.svg#Link"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
-                <div class="releases__item">
-                  <time class="releases-item__date tag" datetime="2021-01-02">02/01/2021</time>
-                  <h3 class="releases-item__title">«Депутатский час» 22.01.2021</h3>
-                  <div class="releases-item__link">
-                    <svg class="i-link" width="21" height="18" aria-hidden="true">
-                      <use xlink:href="img/icons/icons.svg#Link"></use>
-                    </svg>
+                <div class="releases__item releases-item">
+                  <div class="releases-item__container">
+                    <time class="releases-item__date tag" datetime="2021-01-02">02/01/2021</time><a class="releases-item__title" href="#"> «Депутатский час» 22.01.2021</a>
+                    <div class="releases-item__link">
+                      <svg class="i-link" width="21" height="18" aria-hidden="true">
+                        <use xlink:href="img/icons/icons.svg#Link"></use>
+                      </svg>
+                    </div>
                   </div>
                 </div>
+              </div>
+              <div class="releases__swiper-button-next swiper-button-next">
+                <svg class="i-link" width="8" height="16" aria-hidden="true">
+                  <use xlink:href="img/icons/icons.svg#Arrow-Swiper"></use>
+                </svg>
+              </div>
+              <div class="releases__swiper-button-prev swiper-button-prev">
+                <svg class="i-link" width="8" height="16" aria-hidden="true">
+                  <use xlink:href="img/icons/icons.svg#Arrow-Swiper"></use>
+                </svg>
               </div>
             </div>
           </div><a class="releases__link link_border" href="#">Все выпуски</a>
@@ -330,19 +376,19 @@
         <div class="footer__container">
           <div class="footer__top">
             <div class="socials-footer__title">Подписывайтесь на нас:</div>
-            <div class="socials-footer__icons"><a class="socials-footer__link" href="#"> 
+            <div class="socials-footer__icons icons-socials"><a class="socials-footer__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="23px" height="23px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#YouTube"></use>
-                </svg></a><a class="socials-footer__link" href="#"> 
+                </svg></a><a class="socials-footer__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="23px" height="23px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#Facebook"></use>
-                </svg></a><a class="socials-footer__link" href="#"> 
+                </svg></a><a class="socials-footer__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="27px" height="27px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#Vk"></use>
-                </svg></a><a class="socials-footer__link" href="#"> 
+                </svg></a><a class="socials-footer__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="24px" height="24px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#Ok"></use>
-                </svg></a><a class="socials-footer__link" href="#"> 
+                </svg></a><a class="socials-footer__link icons-socials__link" href="#"> 
                 <svg class="i-arrow" width="23px" height="23px" aria-hidden="true">
                   <use xlink:href="img/icons/icons.svg#Instagram"></use>
                 </svg></a></div>

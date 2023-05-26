@@ -4,6 +4,7 @@ import Swiper, {
   EffectFade,
   EffectCoverflow,
   Autoplay,
+  EffectCards,
 } from 'swiper'
 
 let articleSwiper = new Swiper('.article__swiper', {
@@ -89,32 +90,78 @@ let development = new Swiper('.development__swiper', {
   },
 })
 
-// const slider = document.querySelector('.swiper-container')
+// let releasesSwiper1 = new Swiper('.releases__swiper', {
+//   modules: [Navigation, EffectFade],
+//   slidesPerView: 1,
+//   loop: true,
 
-// let releasesSwiper
+//   // speed: 1200,
 
-// function mobileSlider() {
-//   if (window.innerWidth <= 600 && slider.dataset.mobile == 'false') {
-//     releasesSwiper = new Swiper(slider, {
-//       slidesPerView: 1,
-//       spaceBetween: 10,
-//       loop: true,
-//       slideClass: 'releases__item',
-//     })
+//   // spaceBetween: 49,
 
-//     slider.dataset.mobile = 'true'
-//   }
+//   simulateTouch: false,
 
-//   if (window.innerWidth > 600) {
-//     slider.dataset.mobile = 'false'
-//     if (slider.classList.contains('.swiper-container-initialized')) {
-//       releasesSwiper.destroy()
-//     }
-//   }
-// }
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
 
-// mobileSlider()
-
-// window.addEventListener('resize', () => {
-//   mobileSlider()
+//   effect: 'fade',
+//   fadeEffect: {
+//     crossFade: true,
+//   },
 // })
+
+const slider = document.querySelector('.releases__swiper')
+
+let releasesSwiper
+
+function mobileSlider() {
+  if (window.innerWidth <= 768 && slider.dataset.mobile == 'false') {
+    releasesSwiper = new Swiper(slider, {
+      modules: [Navigation, EffectFade, Autoplay],
+
+      slideClass: 'releases__item',
+
+      loop: true,
+      slidesPerView: 1,
+      // spaceBetween: 30,
+
+      speed: 1000,
+
+      simulateTouch: false,
+
+      effect: 'fade',
+
+      fadeEffect: {
+        crossFade: true,
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+
+    slider.dataset.mobile = 'true'
+  }
+
+  if (window.innerWidth > 768) {
+    // releasesSwiper.destroy()
+    if (slider.classList.contains('swiper-initialized')) {
+      slider.dataset.mobile = 'false'
+      releasesSwiper.destroy()
+    }
+  }
+}
+
+if (
+  window.hasOwnProperty('dataset') &&
+  window.dataset.hasOwnProperty('mobile')
+) {
+  mobileSlider()
+}
+
+window.addEventListener('resize', () => {
+  mobileSlider()
+})

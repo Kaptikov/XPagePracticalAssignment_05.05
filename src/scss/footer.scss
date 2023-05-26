@@ -64,14 +64,10 @@
   // .socials-footer__icons
   &__icons {}
 
-  &__icons svg {
-    transition: 0.2s ease-in-out;
-  }
-
-  &__icons svg:hover {
-    color: $red;
-    scale: (1.3);
-  }
+  // &__icons svg:hover {
+  //   color: $red;
+  //   scale: (1.3);
+  // }
 
 
 
@@ -80,6 +76,14 @@
 
   &__link:not(:last-child) {
     margin-right: 20px;
+  }
+}
+
+@media (max-width: 1503px) {
+  .socials-footer {
+    &__title {
+      @include adaptiv-font(24, 16);
+    }
   }
 }
 
@@ -104,6 +108,12 @@
     &__legal {
       text-align: center;
       margin-bottom: 24px;
+    }
+  }
+
+  .socials-footer {
+    &__link:not(:last-child) {
+      margin-right: 16px;
     }
   }
 }
