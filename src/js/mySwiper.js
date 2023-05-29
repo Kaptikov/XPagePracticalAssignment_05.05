@@ -13,7 +13,7 @@ let articleSwiper = new Swiper('.article__swiper', {
   loop: true,
   slidesPerView: 1,
 
-  speed: 1500,
+  speed: 800,
 
   effect: 'fade',
 
@@ -43,7 +43,7 @@ let development = new Swiper('.development__swiper', {
   modules: [Navigation, EffectCoverflow],
   slidesPerView: 3,
 
-  speed: 1200,
+  speed: 800,
 
   spaceBetween: 49,
 
@@ -127,7 +127,7 @@ function mobileSlider() {
       slidesPerView: 1,
       // spaceBetween: 30,
 
-      speed: 1000,
+      speed: 500,
 
       simulateTouch: false,
 

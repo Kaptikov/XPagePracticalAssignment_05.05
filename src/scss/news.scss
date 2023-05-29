@@ -32,7 +32,7 @@
 
   &__video {
     position: relative;
-    padding-top: 56%;
+    padding-top: 56.33%;
     margin-bottom: 48px
   }
 
@@ -119,14 +119,14 @@
 
   // .socials-extras__link
 
-  &__link svg {
-    transition: 0.2s ease-in-out;
-  }
+  // &__link svg {
+  //   transition: 0.2s ease-in-out;
+  // }
 
-  &__link svg:hover {
-    color: $red;
-    scale: (1.5);
-  }
+  // &__link svg:hover {
+  //   color: $red;
+  //   scale: (1.5);
+  // }
 }
 
 h3 {
@@ -142,6 +142,7 @@ h4 {
 }
 
 span {
+  font-weight: 300;
   font-size: 14px;
   line-height: 135%;
   // margin-bottom: 26px;
@@ -151,9 +152,11 @@ iframe {
   margin-bottom: 48px;
 }
 
+
+
 p {
-  margin-top: 29px;
-  margin-bottom: 52px;
+  // margin-top: 29px;
+  // margin-bottom: 52px;
 }
 
 // img {
@@ -175,7 +178,7 @@ blockquote {
 
 p,
 blockquote {
-  // font-weight: 300;
+  font-weight: 300;
   font-size: 16px;
   line-height: 165%;
 }

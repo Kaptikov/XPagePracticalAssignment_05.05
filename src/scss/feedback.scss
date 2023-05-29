@@ -58,6 +58,7 @@
     &--comment {
       grid-area: comment;
       border-bottom: 2px solid #fff;
+      max-height: 300px;
     }
 
     &--file {

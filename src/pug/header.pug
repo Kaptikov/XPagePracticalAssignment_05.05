@@ -24,7 +24,7 @@ header.header
 					li.menu__item
 						a.menu__link(href="#") Реклама
 					li.menu__item.menu__item_dropdown
-						a.menu__link(href="#") Онлайн 
+						.menu__link(tabindex="0") Онлайн 
 							svg.i-arrow(width="11px" height="7px" aria-hidden="true")
 								use(xlink:href='img/icons/icons.svg#Arrow')
 						ul.sub-menu__list
@@ -39,7 +39,7 @@ header.header
 					li.menu__item
 						a.menu__link(href="#") Программа передач
 					li.menu__item.menu__item_dropdown
-						a.menu__link(href="#") Еще
+						.menu__link(tabindex="0") Еще
 							svg.i-arrow(width="11px" height="7px" aria-hidden="true")
 								use(xlink:href='img/icons/icons.svg#Arrow')
 						ul.sub-menu__list
@@ -84,15 +84,33 @@ header.header
 						li.menu-burger__item
 							a.menu-burger__link(href="#") Реклама
 						li.menu-burger__item.menu-burger__item_dropdown
-							a.menu-burger__link(href="#") Онлайн 
+							.menu-burger__link Онлайн 
 								svg.i-arrow(width="11px" height="7px" aria-hidden="true")
 									use(xlink:href='img/icons/icons.svg#Arrow')
+							ul.sub-menu-burger__list
+								li.sub-menu-burger__item
+									a.sub-menu-burger__link(href='#') Онлайн
+								li.sub-menu-burger__item
+									a.sub-menu-burger__link(href='#') Реклама
+								li.sub-menu-burger__item
+									a.sub-menu-burger__link(href='#') Все новости
+								li.sub-menu-burger__item
+									a.sub-menu-burger__link(href='#') Свежие новости
 						li.menu-burger__item
 							a.menu-burger__link(href="#") Программа передач
 						li.menu-burger__item.menu-burger__item_dropdown
-							a.menu-burger__link(href="#") Еще
+							.menu-burger__link Еще
 								svg.i-arrow(width="11px" height="7px" aria-hidden="true")
 									use(xlink:href='img/icons/icons.svg#Arrow')
+							ul.sub-menu-burger__list
+								li.sub-menu-burger__item
+									a.sub-menu-burger__link(href='#') Онлайн
+								li.sub-menu-burger__item
+									a.sub-menu-burger__link(href='#') Реклама
+								li.sub-menu-burger__item
+									a.sub-menu-burger__link(href='#') Все новости
+								li.sub-menu-burger__item
+									a.sub-menu-burger__link(href='#') Свежие новости
 							ul.sub-menu__list
 								li.sub-menu__item
 									a.sub-menu__link(href='#') Онлайн
@@ -108,19 +126,19 @@ header.header
 				.header-burger__subscribe.subscribe-burger
 					.subscribe-burger__title
 						|Подписывайтесь на нас:
-					.subscribe-burger__icons
-						a.subscribe-burger__link(href="#") 
+					.subscribe-burger__icons.icons-socials
+						a.subscribe-burger__link.icons-socials__link(href="#") 
 							svg.i-arrow(width="20px" height="21px" aria-hidden="true")
 								use(xlink:href='img/icons/icons.svg#YouTube')
-						a.subscribe-burger__link(href="#") 
+						a.subscribe-burger__link.icons-socials__link(href="#") 
 							svg.i-arrow(width="21px" height="21px" aria-hidden="true")
 								use(xlink:href='img/icons/icons.svg#Facebook')
-						a.subscribe-burger__link(href="#") 
+						a.subscribe-burger__link.icons-socials__link(href="#") 
 							svg.i-arrow(width="25px" height="24px" aria-hidden="true")
 								use(xlink:href='img/icons/icons.svg#Vk')
-						a.subscribe-burger__link(href="#") 
+						a.subscribe-burger__link.icons-socials__link(href="#") 
 							svg.i-arrow(width="21px" height="21px" aria-hidden="true")
 								use(xlink:href='img/icons/icons.svg#Ok')
-						a.subscribe-burger__link(href="#") 
+						a.subscribe-burger__link.icons-socials__link(href="#") 
 							svg.i-arrow(width="21px" height="21px" aria-hidden="true")
 								use(xlink:href='img/icons/icons.svg#Instagram')

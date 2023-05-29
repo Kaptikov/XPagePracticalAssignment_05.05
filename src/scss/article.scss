@@ -330,6 +330,16 @@
   // }
 }
 
+@media (max-width: 768px) {
+  .article {
+
+    &__container {
+      padding-bottom: 52px;
+      margin-bottom: 22px;
+    }
+  }
+}
+
 @media (max-width: 536px) {
   .article {
 
