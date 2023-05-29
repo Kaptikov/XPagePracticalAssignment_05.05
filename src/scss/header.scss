@@ -348,7 +348,7 @@
 
   &__item_dropdown {
     position: relative;
-    cursor: pointer;
+    // cursor: pointer;
   }
 
   &__item_dropdown &__link:hover {
@@ -407,7 +407,7 @@
 
   &__item {
     // padding: 7px 5px 0 5px;
-    transition: all 0.3s ease-in-out;
+    // transition: all 0.3s ease-in-out;
   }
 
   &__link:hover {
@@ -575,11 +575,6 @@
       // .menu__item_dropdown
       &_dropdown {}
 
-      &_dropdown {
-        .menu__link:focus {
-          outline: 1px solid black;
-        }
-      }
     }
   }
 

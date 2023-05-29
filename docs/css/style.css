@@ -2123,7 +2123,6 @@ a:hover {
 }
 .menu-burger__item_dropdown {
   position: relative;
-  cursor: pointer;
 }
 .menu-burger__item_dropdown .menu-burger__link:hover {
   color: #9F0023;
@@ -2156,9 +2155,6 @@ a:hover {
   visibility: hidden;
   border-radius: 5px;
   z-index: 1;
-}
-.sub-menu-burger__item {
-  transition: all 0.3s ease-in-out;
 }
 .sub-menu-burger__link:hover {
   color: #9F0023;
@@ -2238,9 +2234,6 @@ a:hover {
   }
   .menu-burger__item:not(:last-child) {
     margin-bottom: 10px;
-  }
-  .menu-burger__item_dropdown .menu__link:focus {
-    outline: 1px solid black;
   }
   .subscribe-burger__title {
     margin-bottom: 20px;
